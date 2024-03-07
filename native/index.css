@@ -1,0 +1,167 @@
+* {
+    font-size: 1em;
+}
+
+body, html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+    margin: 0;
+    padding: 30px 40px;
+
+    background-color: rgb(7, 6, 6);
+
+}
+
+::-webkit-scrollbar{
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: grey;
+}
+
+input, button{
+    border-radius: 10px;
+}
+
+input{
+    text-align: center;
+    width: 50%;
+    
+    outline-color: rgb(3, 10, 52);
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.286);
+
+}
+button{
+    text-align: center;
+
+    padding: 10px 15px;
+
+    box-shadow: 8px 8px 15px rgba(0,0,0,0.5);
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+
+button:active{
+    transform: translateY(4px);
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px 30px;
+    width: 40%;
+    height: auto;
+
+    border-radius: 20px;
+    box-shadow: 4px 4px 5px rgba(255, 255, 255, 0.38);
+    background-color: rgba(77, 76, 76, 0.500);
+}
+
+
+.container .section{
+    display: flex;
+    justify-content: space-between;   
+
+}
+
+.container .item{ 
+    margin: 10px 0;
+}
+
+.container .item .kode-kendaraan{
+    display: block;
+    margin-bottom: 10px;
+
+    font-weight: bold;
+}
+
+
+
+.container #item-6{
+    margin: 0 0 0 0;
+
+    display: flex;
+    flex-direction: row;
+}
+
+
+.container #item-6-left-side,
+.container #item-6-right-side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 10px;
+
+    /* width: 50%; */
+}
+
+.container #item-tanggal,
+.container #item-waktu{
+    margin: 0;
+    color: white;
+    font-style: italic;
+    /* width: 50%; */
+
+    background-color: rgb(3, 10, 52);
+}
+
+.container #item-6-right-side #item-reset,
+.container #item-6-right-side #item-set,
+.container #item-6-right-side #item-data{
+    /* color: white; */
+    font-weight: 900;
+}
+
+#item-reset{
+    background-color: red;
+}
+
+#item-set{
+    background-color: blue;
+}
+
+#item-data{
+    background-color: green;
+}
+
+
+/* ---------------GAMBARR-------------- */
+
+.gambar{
+    width: 80px;
+}
+
+
+
+
+
+
+
+
+/* --------------- RESPONSIVE -------------- */
+
+@media (max-width: 450px){
+
+    .container{
+        width: 90%;
+    }
+
+    .gambar{
+        width: 60px;
+    }
+}
